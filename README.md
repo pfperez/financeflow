@@ -1,5 +1,7 @@
 # FinanceFlow
 
+**[Live Demo](https://financeflow-gklkydnwo-pfperezs-projects.vercel.app)**
+
 A full-stack personal finance management application built with Next.js, featuring real-time dashboards, transaction tracking, budgeting, and financial goal planning.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
@@ -144,3 +146,4 @@ All API routes include Zod request validation and return structured JSON respons
 | GET/PATCH/DELETE | `/api/settings` | Profile & account management |
 | POST | `/api/auth/register` | User registration |
 | POST | `/api/seed` | Load demo data |
+22
