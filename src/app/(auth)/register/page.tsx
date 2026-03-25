@@ -54,8 +54,7 @@ export default function RegisterPage() {
         setError("Account created but could not sign in. Please try logging in.");
         setLoading(false);
       } else {
-        router.push("/");
-        router.refresh();
+        window.location.href = "/";
       }
     } catch {
       setError("Something went wrong");
