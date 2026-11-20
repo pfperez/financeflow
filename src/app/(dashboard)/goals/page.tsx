@@ -113,7 +113,7 @@ export default function GoalsPage() {
         </div>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-sm">
+            <Button className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white shadow-sm">
               New Goal
             </Button>
           </DialogTrigger>
@@ -140,7 +140,7 @@ export default function GoalsPage() {
                 <Label>Target Date (optional)</Label>
                 <Input type="date" value={deadline} onChange={(e) => setDeadline(e.target.value)} className="rounded-xl" />
               </div>
-              <Button type="submit" className="w-full rounded-xl bg-violet-600 hover:bg-violet-700 text-white">Create Goal</Button>
+              <Button type="submit" className="w-full rounded-xl bg-gray-900 hover:bg-gray-800 text-white">Create Goal</Button>
             </form>
           </DialogContent>
         </Dialog>
@@ -160,7 +160,7 @@ export default function GoalsPage() {
         <Card className="rounded-2xl border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
           <CardContent className="pt-6 pb-5">
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="h-2.5 w-2.5 rounded-full bg-violet-500" />
+              <div className="h-2.5 w-2.5 rounded-full bg-gray-500" />
               <p className="text-sm font-medium text-muted-foreground">Total Target</p>
             </div>
             <p className="text-2xl font-bold tracking-tight">{formatCurrency(totalTarget)}</p>
@@ -169,7 +169,7 @@ export default function GoalsPage() {
         <Card className="rounded-2xl border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
           <CardContent className="pt-6 pb-5">
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="h-2.5 w-2.5 rounded-full bg-violet-500" />
+              <div className="h-2.5 w-2.5 rounded-full bg-gray-500" />
               <p className="text-sm font-medium text-muted-foreground">Overall Progress</p>
             </div>
             <div className="flex items-end gap-3">
@@ -207,13 +207,13 @@ export default function GoalsPage() {
                 <CardContent className="pt-6 pb-5">
                   <div className="flex items-start justify-between mb-5">
                     <div className="flex items-start gap-3">
-                      <div className={`h-9 w-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isComplete ? "bg-emerald-100 dark:bg-emerald-950" : "bg-violet-100 dark:bg-violet-950"}`}>
+                      <div className={`h-9 w-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isComplete ? "bg-emerald-100 dark:bg-emerald-950" : "bg-gray-100"}`}>
                         {isComplete ? (
                           <svg className="h-4.5 w-4.5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                           </svg>
                         ) : (
-                          <svg className="h-4.5 w-4.5 text-violet-600 dark:text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                          <svg className="h-4.5 w-4.5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
                           </svg>
                         )}
@@ -270,7 +270,7 @@ export default function GoalsPage() {
                         />
                         <Button
                           size="sm"
-                          className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white h-9 px-4"
+                          className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white h-9 px-4"
                           onClick={() =>
                             updateGoalAmount(
                               goal.id,
@@ -296,7 +296,7 @@ export default function GoalsPage() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="w-full mt-1 rounded-xl h-9 text-sm border-dashed hover:border-violet-300 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-colors duration-200"
+                        className="w-full mt-1 rounded-xl h-9 text-sm border-dashed hover:border-gray-300 hover:bg-gray-50 dark:hover:bg-violet-950/30 transition-colors duration-200"
                         onClick={() => setAddFundsId(goal.id)}
                       >
                         Add Funds

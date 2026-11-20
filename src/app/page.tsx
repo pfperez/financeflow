@@ -95,7 +95,7 @@ export default async function LandingPage() {
       <nav className="border-b border-border/40 bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-lg bg-gray-900 flex items-center justify-center">
               <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -111,7 +111,7 @@ export default async function LandingPage() {
             </Link>
             <Link
               href="/register"
-              className="text-sm font-medium bg-violet-600 hover:bg-violet-700 text-white px-4 py-2 rounded-xl transition-colors"
+              className="text-sm font-medium bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-xl transition-colors"
             >
               Get Started
             </Link>
@@ -123,13 +123,13 @@ export default async function LandingPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-violet-500/5 via-transparent to-transparent" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 text-center relative">
-          <div className="inline-flex items-center gap-2 bg-violet-500/10 text-violet-600 dark:text-violet-400 text-xs font-medium px-3 py-1.5 rounded-full mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-violet-500 animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1.5 rounded-full mb-6">
+            <span className="h-1.5 w-1.5 rounded-full bg-gray-500 animate-pulse" />
             Open Source Personal Finance
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight max-w-3xl mx-auto leading-[1.1]">
             Take control of your{" "}
-            <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gray-900 bg-clip-text text-transparent">
               financial future
             </span>
           </h1>
@@ -139,7 +139,7 @@ export default async function LandingPage() {
           <div className="mt-10 flex items-center justify-center gap-4">
             <Link
               href="/register"
-              className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-medium px-6 py-3 rounded-xl transition-all shadow-lg shadow-violet-600/25 hover:shadow-violet-600/40"
+              className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-medium px-6 py-3 rounded-xl transition-all shadow-sm "
             >
               Start for Free
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -173,9 +173,9 @@ export default async function LandingPage() {
                     <p className="text-xs text-muted-foreground">Expenses</p>
                     <p className="text-lg font-bold text-red-600 mt-1">$3,247.82</p>
                   </div>
-                  <div className="rounded-xl bg-violet-500/5 p-4">
+                  <div className="rounded-xl bg-gray-50 p-4">
                     <p className="text-xs text-muted-foreground">Savings</p>
-                    <p className="text-lg font-bold text-violet-600 mt-1">$3,252.18</p>
+                    <p className="text-lg font-bold text-gray-900 mt-1">$3,252.18</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -205,9 +205,9 @@ export default async function LandingPage() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group rounded-2xl border border-border/50 bg-card p-6 hover:border-violet-500/30 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300"
+                className="group rounded-2xl border border-border/50 bg-card p-6 hover:border-gray-300 hover:shadow-lg  transition-all duration-300"
               >
-                <div className="h-11 w-11 rounded-xl bg-violet-500/10 text-violet-600 dark:text-violet-400 flex items-center justify-center mb-4 group-hover:bg-violet-500/15 transition-colors">
+                <div className="h-11 w-11 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center mb-4 group-hover:bg-gray-500/15 transition-colors">
                   {feature.icon}
                 </div>
                 <h3 className="font-semibold mb-2">{feature.title}</h3>
@@ -245,7 +245,7 @@ export default async function LandingPage() {
             </p>
             <Link
               href="/register"
-              className="mt-8 inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-violet-600/25 hover:shadow-violet-600/40"
+              className="mt-8 inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-sm "
             >
               Get Started Free
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -260,7 +260,7 @@ export default async function LandingPage() {
       <footer className="border-t border-border/40 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-6 w-6 rounded-md bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center">
+            <div className="h-6 w-6 rounded-md bg-gray-900 flex items-center justify-center">
               <svg className="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>

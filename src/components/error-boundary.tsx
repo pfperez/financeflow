@@ -43,7 +43,7 @@ export class ErrorBoundary extends Component<Props, State> {
               this.setState({ hasError: false, error: null });
               window.location.reload();
             }}
-            className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white"
+            className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white"
           >
             Refresh Page
           </Button>

@@ -37,7 +37,7 @@ export function MobileNav() {
         </SheetTrigger>
         <SheetContent side="left" className="w-[280px] p-0 border-r border-border/50">
           <div className="flex h-14 items-center gap-3 px-6">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 text-white font-bold text-xs shadow-md">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-900 text-white font-bold text-xs shadow-md">
               F
             </div>
             <span className="text-lg font-bold tracking-tight">FinanceFlow</span>
@@ -79,7 +79,7 @@ export function MobileNav() {
         </SheetContent>
       </Sheet>
       <div className="flex items-center gap-2">
-        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 text-white font-bold text-xs">
+        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900 text-white font-bold text-xs">
           F
         </div>
         <span className="font-bold tracking-tight">FinanceFlow</span>

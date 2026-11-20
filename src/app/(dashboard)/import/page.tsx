@@ -120,7 +120,7 @@ export default function ImportPage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div
-            className="border-2 border-dashed border-border rounded-xl p-8 text-center cursor-pointer hover:border-violet-400 hover:bg-violet-50/30 dark:hover:bg-violet-950/20 transition-all duration-200"
+            className="border-2 border-dashed border-border rounded-xl p-8 text-center cursor-pointer hover:border-violet-400 hover:bg-gray-50/30 transition-all duration-200"
             onClick={() => fileRef.current?.click()}
           >
             <div className="mx-auto h-12 w-12 rounded-full bg-muted flex items-center justify-center mb-4">
@@ -214,7 +214,7 @@ export default function ImportPage() {
           <Button
             onClick={handleImport}
             disabled={importing || !accountId}
-            className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-sm px-8"
+            className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white shadow-sm px-8"
           >
             {importing ? "Importing..." : "Import Transactions"}
           </Button>

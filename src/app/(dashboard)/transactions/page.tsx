@@ -175,7 +175,7 @@ export default function TransactionsPage() {
           </Button>
           <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
-              <Button className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-md shadow-violet-600/20 transition-all duration-200">
+              <Button className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white shadow-sm transition-all duration-200">
                 <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                 </svg>
@@ -245,7 +245,7 @@ export default function TransactionsPage() {
                   <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Note (optional)</Label>
                   <Input placeholder="Add a note..." value={note} onChange={(e) => setNote(e.target.value)} className="rounded-xl bg-card border-border/50 h-11" />
                 </div>
-                <Button type="submit" className="w-full rounded-xl h-11 bg-violet-600 hover:bg-violet-700 text-white shadow-md shadow-violet-600/20 transition-all duration-200 font-medium">
+                <Button type="submit" className="w-full rounded-xl h-11 bg-gray-900 hover:bg-gray-800 text-white shadow-sm transition-all duration-200 font-medium">
                   Add Transaction
                 </Button>
               </form>
@@ -384,7 +384,7 @@ export default function TransactionsPage() {
                   key={pageNum}
                   variant={page === pageNum ? "default" : "outline"}
                   size="sm"
-                  className={`rounded-xl w-9 ${page === pageNum ? "bg-violet-600 hover:bg-violet-700 text-white" : ""}`}
+                  className={`rounded-xl w-9 ${page === pageNum ? "bg-gray-900 hover:bg-gray-800 text-white" : ""}`}
                   onClick={() => setPage(pageNum)}
                 >
                   {pageNum}

@@ -146,7 +146,7 @@ export default function SettingsPage() {
         </CardHeader>
         <CardContent>
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-16 w-16 rounded-full bg-gradient-to-br from-violet-500 to-indigo-500 flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-violet-500/25">
+            <div className="h-16 w-16 rounded-full bg-gray-700 flex items-center justify-center text-white text-xl font-bold shadow-sm">
               {initials}
             </div>
             <div>
@@ -169,7 +169,7 @@ export default function SettingsPage() {
                 <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="rounded-xl" />
               </div>
             </div>
-            <Button type="submit" disabled={saving} className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white">
+            <Button type="submit" disabled={saving} className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white">
               {saving ? "Saving..." : "Save Changes"}
             </Button>
           </form>
@@ -197,7 +197,7 @@ export default function SettingsPage() {
                 <Input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required minLength={6} className="rounded-xl" />
               </div>
             </div>
-            <Button type="submit" disabled={saving} className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white">
+            <Button type="submit" disabled={saving} className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white">
               {saving ? "Changing..." : "Change Password"}
             </Button>
           </form>

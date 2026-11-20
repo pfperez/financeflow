@@ -71,7 +71,7 @@ export function Sidebar() {
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex h-16 items-center gap-3 px-6">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 text-white font-bold text-sm shadow-lg shadow-violet-500/25">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gray-900 text-white font-bold text-sm shadow-sm">
             F
           </div>
           <span className="text-lg font-bold tracking-tight">FinanceFlow</span>
@@ -121,7 +121,7 @@ export function Sidebar() {
         {/* User profile card */}
         <div className="border-t border-border/50 p-3">
           <div className="flex items-center gap-3 rounded-xl bg-accent/50 px-3 py-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-indigo-500 text-white text-xs font-bold">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 text-white text-xs font-bold">
               {initials}
             </div>
             <div className="flex-1 min-w-0">

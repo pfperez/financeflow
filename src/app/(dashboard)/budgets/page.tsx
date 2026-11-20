@@ -97,7 +97,7 @@ export default function BudgetsPage() {
         </div>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-sm">
+            <Button className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white shadow-sm">
               Set Budget
             </Button>
           </DialogTrigger>
@@ -121,7 +121,7 @@ export default function BudgetsPage() {
                 <Label>Monthly Limit</Label>
                 <Input type="number" step="0.01" placeholder="500.00" value={monthlyLimit} onChange={(e) => setMonthlyLimit(e.target.value)} required className="rounded-xl" />
               </div>
-              <Button type="submit" className="w-full rounded-xl bg-violet-600 hover:bg-violet-700 text-white">Set Budget</Button>
+              <Button type="submit" className="w-full rounded-xl bg-gray-900 hover:bg-gray-800 text-white">Set Budget</Button>
             </form>
           </DialogContent>
         </Dialog>
@@ -132,7 +132,7 @@ export default function BudgetsPage() {
         <Card className="rounded-2xl border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
           <CardContent className="pt-6 pb-5">
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="h-2.5 w-2.5 rounded-full bg-violet-500" />
+              <div className="h-2.5 w-2.5 rounded-full bg-gray-500" />
               <p className="text-sm font-medium text-muted-foreground">Total Budget</p>
             </div>
             <p className="text-2xl font-bold tracking-tight">{formatCurrency(totalBudget)}</p>

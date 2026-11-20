@@ -115,7 +115,7 @@ export default function TransfersPage() {
         </div>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-md shadow-violet-600/20 transition-all duration-200">
+            <Button className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white shadow-sm transition-all duration-200">
               <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
               </svg>
@@ -146,7 +146,7 @@ export default function TransfersPage() {
 
               {/* Visual Arrow Indicator */}
               <div className="flex justify-center py-1">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shadow-md shadow-violet-500/20">
+                <div className="h-10 w-10 rounded-xl bg-gray-900 flex items-center justify-center shadow-sm">
                   <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
@@ -178,7 +178,7 @@ export default function TransfersPage() {
                 <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Note (optional)</Label>
                 <Input placeholder="Add a note..." value={note} onChange={(e) => setNote(e.target.value)} className="rounded-xl bg-card border-border/50 h-11" />
               </div>
-              <Button type="submit" className="w-full rounded-xl h-11 bg-violet-600 hover:bg-violet-700 text-white shadow-md shadow-violet-600/20 transition-all duration-200 font-medium">
+              <Button type="submit" className="w-full rounded-xl h-11 bg-gray-900 hover:bg-gray-800 text-white shadow-sm transition-all duration-200 font-medium">
                 Transfer
               </Button>
             </form>
@@ -231,7 +231,7 @@ export default function TransfersPage() {
               {transfers.map((t) => (
                 <div key={t.id} className="flex items-center justify-between px-3 sm:px-5 py-3 sm:py-4 transition-colors duration-150">
                   <div className="flex items-center gap-4">
-                    <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shrink-0 shadow-sm shadow-violet-500/20">
+                    <div className="h-11 w-11 rounded-xl bg-gray-900 flex items-center justify-center shrink-0 shadow-sm">
                       <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                       </svg>
@@ -251,7 +251,7 @@ export default function TransfersPage() {
                       variant={t.status === "completed" ? "default" : "secondary"}
                       className={`rounded-lg text-[11px] font-medium ${
                         t.status === "completed"
-                          ? "bg-violet-100 text-violet-700 hover:bg-violet-100 dark:bg-violet-500/15 dark:text-violet-400"
+                          ? "bg-gray-100 text-gray-800 hover:bg-gray-100 dark:bg-gray-500/15 dark:text-gray-600"
                           : "bg-muted text-muted-foreground"
                       }`}
                     >

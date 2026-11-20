@@ -111,7 +111,7 @@ export default function BillsPage() {
         </div>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button className="rounded-xl bg-violet-600 hover:bg-violet-700 text-white shadow-sm">
+            <Button className="rounded-xl bg-gray-900 hover:bg-gray-800 text-white shadow-sm">
               Add Bill
             </Button>
           </DialogTrigger>
@@ -156,7 +156,7 @@ export default function BillsPage() {
                   </SelectContent>
                 </Select>
               </div>
-              <Button type="submit" className="w-full rounded-xl bg-violet-600 hover:bg-violet-700 text-white">Add Bill</Button>
+              <Button type="submit" className="w-full rounded-xl bg-gray-900 hover:bg-gray-800 text-white">Add Bill</Button>
             </form>
           </DialogContent>
         </Dialog>
@@ -213,7 +213,7 @@ export default function BillsPage() {
                   <div className="flex items-center gap-3.5">
                     <button
                       onClick={() => togglePaid(bill.id, bill.isPaid)}
-                      className="h-5 w-5 rounded-md border-2 border-muted-foreground/25 hover:border-violet-500 transition-colors duration-200 flex items-center justify-center flex-shrink-0"
+                      className="h-5 w-5 rounded-md border-2 border-muted-foreground/25 hover:border-gray-400 transition-colors duration-200 flex items-center justify-center flex-shrink-0"
                     />
                     <div>
                       <p className="font-medium text-sm">{bill.name}</p>
